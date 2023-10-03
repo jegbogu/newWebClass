@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration</h1>
+    <form>
+        <div>
+            <label for="fullname">Full Name</label>
+        </div>
+       <div>
+        <input type="text" name="fullname" id="fullname" value="joe doe" readonly required>
+       </div>
+        <div>
+            <label for="email">Email</label>
+        </div>
+       <div>
+        <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required>
+       </div>
+        <div>
+            <label for="password">Password</label>
+        </div>
+       <div>
+        <input type="password" name="password" id="password" required>
+       </div>
+        <div>
+            <label for="gpz">Geo Political Zone</label>
+        </div>
+       <div>
+        <select name="gpz" id="gpz" required>
+            <option value="South-South">South-South</option>
+            <option value="North-East">North-East</option>
+            <option value="South-West">South-West</option>
+        </select>
+       </div>
+        <div>
+            <label for="gender">Gender</label>
+        </div>
+       <div>
+
+        <label for="male">Male</label>
+         <input type="radio" name="gender" id="male" required>
+
+        <label for="female">Female</label>
+         <input type="radio" name="gender" id="female">
+       </div>
+
+       <div>
+        <label for="dob">Date Of Birth</label>
+    </div>
+   <div>
+    <input type="date" name="dob" id="dob" required>
+   </div>
+
+
+       <div>
+        <label for="passport">Passport</label>
+    </div>
+   <div>
+    <input type="file" name="passport" id="passport" required>
+   </div>
+
+       <div>
+        <label for="credentials">Credentials</label>
+    </div>
+   <div>
+    <input type="file" name="credentials" id="credentials" multiple required>
+   </div>
+
+       <div>
+        <label for="msg">Leave a Message</label>
+    </div>
+   <div>
+    <textarea name="msg" id="msg" cols="60" rows="10" maxlength="20"></textarea>
+   </div>
+<!-- <button type="submit" disabled>Submit</button> -->
+<button type="submit" >Submit</button>
+
+   <!-- <input type="submit" value="Submit"> -->
+         
+    </form>
+
+
+
+</body>
+</html>
