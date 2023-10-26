@@ -61,6 +61,28 @@ list-style-type: none;
     color: var(--t-col);
     font-size: 1em;
 }
+.bannersection{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    align-items: end;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.bannersection figure{
+    border: solid white 2px;
+}
+.bannersection img{
+    width: 100%;
+}
+.bannerpara{
+    padding: 10px;
+    text-align: justify;
+}
+.bannersection>div{
+    width: 30%;
+    border: solid var(--p-col) 1px;
+}
 .btn{
      margin-left: 28%;
 }
