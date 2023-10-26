@@ -83,6 +83,20 @@ list-style-type: none;
     width: 30%;
     border: solid var(--p-col) 1px;
 }
+.gallery{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 20px;
+    grid-gap: 20px;
+}
+.gallery>div{
+    border: solid var(--p-col) 1px;
+}
+.gallery img{
+    height: 100%;
+}
 .btn{
      margin-left: 28%;
 }
