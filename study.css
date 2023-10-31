@@ -14,6 +14,9 @@ nav{
     background-color: var(--s-col);
     display: flex;
 }
+.mobileNav{
+    display: none;
+}
 .logo img{
     width: 20%;
     border-radius: 30%;
@@ -180,4 +183,46 @@ list-style-type: none;
 }
 .learn .article{
     order: 1;
+}
+
+
+@media screen and (max-width: 780px){
+    nav{
+        background-color: var(--s-col);
+        display: none;
+    }
+    .mobileNav{
+        display: flex;
+        background-color:black;
+       padding-bottom: 40px;
+    }
+    .mobileNav .menu{
+       
+        margin-top: 20px;
+        margin-left: 200px;
+    }
+   .mobileNav .menu ul{
+        background-color: black;
+        display: none;
+        width: 95%;
+        margin-left:37px ;
+        border: var(--p-col) 1px solid;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        border-radius: 10px;
+        box-shadow: gray 1px 2px 3px;
+        
+    }
+    
+    .mobileNav .menu:hover.menu ul{
+        display: block;
+    }
+    .mobileNav figure img{
+        width: 30%;
+    }
+    .menu svg{
+        margin-left: 90px;
+    }
+     
 }
