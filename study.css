@@ -224,5 +224,83 @@ list-style-type: none;
     .menu svg{
         margin-left: 90px;
     }
+    .btn{
+        margin-left:100px;
+   }
+   .btn button{
+       padding:10px;
+       background: linear-gradient(120deg,var(--p-col),var(--s-col),var(--s-col));
+       color: var(--t-col);
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       font-size: 1.2em;
+       border: solid 1px var(--p-col);
+       border-radius: 10px;
+       margin-left: 10px;
+   
+   }
+   .gallery{
+    display: grid;
+    grid-template-columns: auto;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 20px;
+   
+    grid-gap: 20px;
+    animation-name: gallery;
+    animation-duration: 5s;
+}
+.bannersection{
+    display: flex;
+    flex-direction:column;
+    margin-left:-20px;
      
+}
+.bannersection>div{
+    width: 80%;
+    border: solid var(--p-col) 1px;
+    margin-top: 20px;
+}
+}
+
+@media screen and (max-width: 450px){
+    nav{
+        background-color: var(--s-col);
+        display: none;
+       
+    }
+    .mobileNav{
+        display: flex;
+        background-color:black;
+       padding-bottom: 40px;
+    }
+    .mobileNav .menu{
+      
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+   .mobileNav .menu ul{
+        background-color: black;
+        display: none;
+        width: 95%;
+        margin-left:17px ;
+        border: var(--p-col) 1px solid;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        border-radius: 10px;
+        box-shadow: gray 1px 2px 3px;
+        
+    }
+    
+    .mobileNav .menu:hover.menu ul{
+        display: block;
+    }
+    .mobileNav figure img{
+        width: 30%;
+    }
+    .menu svg{
+        margin-left: -50px;
+    }
+     
+    
 }
